@@ -10,12 +10,19 @@ public class ToDoList {
     List<Item> items = new ArrayList<>();
 
 
+    //setter for class
     public ToDoList()
     {
 
     }
 
+    //both below are getters
     public int getCapacity() {
         return capacity;
+    }
+
+    public String getTitle()
+    {
+        return title;
     }
 }

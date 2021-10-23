@@ -60,7 +60,7 @@ public class Application {
         return listOne;
     }
 
-    public Item editItemDescription(Item item)
+    public Item editItemDescription(Item item, String description)
     {
         //takes the item that a person wants to edit the description of
 
@@ -70,7 +70,7 @@ public class Application {
         return item;
     }
 
-    public Item editDueDate(Item item)
+    public Item editDueDate(Item item, String date)
     {
         //takes the item that a person wants to edit the description of
 
