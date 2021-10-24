@@ -6,14 +6,33 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-//main application. currently putting all classes in here, but they will most likely move around
-public class Application {
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 
-    static final Scanner input = new Scanner(System.in);
+//main application. currently putting all classes in here, but they will most likely move around
+public class Application extends javafx.application.Application {
+    @Override
+    public void start(Stage stage) throws Exception {
+        Parent root = FXMLLoader.load(getClass().getResource("assignment05_gui.fxml"));
+        Scene scene = new Scene(root);
+        stage.setTitle("To Do List");
+        stage.setScene(scene);
+        stage.show();
+    }
+    //public void start (Stage stage) throws Exception {
+    //
+    //Scene scene = new Scene(root);
+    //stage.setTitle("name");
+    //stage.setScene(scene);
+    //stage.show();
+
+
 
     public static void main(String[] args)
     {
-
+        launch(args);
     }
 
     private String getListTitleInput()
