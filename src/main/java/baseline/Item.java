@@ -26,5 +26,33 @@ public class Item {
         return dueDate;
     }
 
+    public Item editItemDescription(Item item, String description)
+    {
+        //takes the item that a person wants to edit the description of
+
+        //goes into the item and changes that description
+
+        //returns it
+        return item;
+    }
+
+    public Item editDueDate(Item item, String date)
+    {
+        //takes the item that a person wants to edit the description of
+
+        //goes into the item and changes that dueDate
+
+        //returns it
+        return item;
+    }
+
+    private Item markItemComplete(Item item)
+    {
+        //changes boolean of item from false to true.
+
+        //return it
+        return item;
+    }
+
 
 }
